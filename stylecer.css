@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar--height: 50px;
+}
+
+body {
+    background-color: rgb(34, 6, 55);
+    color: rgb(38, 179, 38);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    background-color: rgb(40, 23, 61);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: -20px 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(214, 214, 229, 0.966);
+}
+nav ul li a:hover{
+    color: rgba(129, 129, 233, 0.949);
+    font-size: 1.04rem;
+}
+.dropdown{
+    margin-bottom: -44px;
+}
+#navbarDropdown{
+    position: relative;
+    /* margin-top: -11px; */
+    /* margin-bottom: -16px; */
+    list-style: none;
+    margin: -8px 23px;
+}
+main{
+    background-color: #385fdd;
+    margin: -25px 0px;
+    height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color:#385fdd;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+   font-weight: bolder;
+  font-size: 20px;
+  position: absolute;
+  bottom: 43px;
+  left: 35px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.submit-btn{
+    margin: 18px 6px;
+    padding: 6px 6px;
+    border-radius: 20px;
+    background-color: rgb(30, 195, 210);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
